@@ -1,0 +1,53 @@
+/* Design tokens: technical-paper theme. Contrast ratios noted against --paper (#f7f9fd), computed WCAG ratios. */
+:root {
+  /* paper & ink */
+  --paper: #f7f9fd;
+  --paper-2: #eef2fa;
+  --white: #ffffff;
+  --ink: #0a1b4d; /* 15.6:1 */
+  --ink-2: #3a4a7c; /* 8.1:1  secondary text */
+  --ink-3: #5a6a9a; /* 5.0:1  tertiary / labels (large or mono labels only) */
+
+  /* cobalt linework */
+  --cobalt: #0b3ba8; /* 9.0:1 */
+  --cobalt-2: #2f5bd0;
+  --cobalt-soft: #dde6f8;
+  --line: rgba(11, 59, 168, 0.42);
+  --line-soft: rgba(11, 59, 168, 0.2);
+  --grid-minor: rgba(11, 59, 168, 0.075);
+  --grid-major: rgba(11, 59, 168, 0.2);
+
+  /* restrained amber */
+  --amber-fill: #f8dfae;
+  --amber-fill-2: #fbecc9;
+  --amber-line: #a4650a;
+  --amber-ink: #6b4204; /* on amber-fill 6.7:1 */
+
+  /* state */
+  --danger: #b3261e; /* 6.2:1 */
+  --danger-soft: #fbe4e1;
+  --danger-ink: #6f1510; /* on danger-soft 9.6:1 */
+  --ok: #17694a; /* 6.3:1 */
+  --ok-soft: #dcf1e6;
+  --ok-ink: #0d4a33; /* on ok-soft 8.7:1 */
+
+  /* type */
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* space (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 72px;
+
+  --radius: 2px; /* drafting aesthetic: near-square corners */
+  --gutter: clamp(16px, 4vw, 40px);
+  --maxw: 1240px;
+  --focus: 0 0 0 2px var(--paper), 0 0 0 4px var(--cobalt);
+  --ease: 140ms ease-out;
+}
